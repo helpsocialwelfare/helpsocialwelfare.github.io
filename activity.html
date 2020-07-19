@@ -55,7 +55,8 @@
 
     <div class="container">
       <h5>Activities</h5>
-      
+      <div class="row row-cols-1" id="activityEl">
+      </div>
     </div>
 
   </main>
@@ -73,9 +74,35 @@
     crossorigin="anonymous"></script>
   <script src="./data/activity.js"></script>
   <script type="text/javascript">
-    $(function() {
-      console.log(activity);
+    $(function() {      
+      $("#activityEl").html(getActivityHtml(activities));
     });
+    function getActivity(activity){
+      var card = `<div class="card mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <img src="..." class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">${activity.title}</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">${activity.location}</h6>
+                          <p class="card-text">${activity.content}</p>
+                          <p class="card-text"><small class="text-muted">${activity.date}</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   `;
+      return card;
+    }
+    function getActivityHtml(activities){
+      var activitiesHtml = [];
+      activities.forEach(function(activity){
+        activitiesHtml.push(getActivity(activity));
+      });
+      return activitiesHtml.join("");
+    }
 </script>
 
 

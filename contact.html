@@ -52,7 +52,15 @@
   </header>
 
   <main role="main">
-<script type="text/javascript">var submitted=false;</script>
+    <script type="text/javascript">
+      var submitted=false;
+      function onSubmit() {
+        submitted=true;
+        setTimeout( function() {
+          document.getElementById("contactForm").reset();
+        }, 500);
+      }
+    </script>
 
     <div class="container">
       <h5>Contact us</h5>
@@ -61,7 +69,7 @@
         <a href="mailto:2017helpfoundation@gmail.com">2017helpfoundation@gmail.com</a>
       </address>
       
-      <form action="https://docs.google.com/forms/d/e/1FAIpQLSfXx-Ti4nQJcpcq08xl9LJCa34yFutRGsIWTuz4fYEWPRp75g/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+      <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLSfXx-Ti4nQJcpcq08xl9LJCa34yFutRGsIWTuz4fYEWPRp75g/formResponse?" target="hidden_iframe" onsubmit="onSubmit">
         <h6>Comments</h6>
         <div class="form-group">
           <label for="entry.1350107316">Name</label>

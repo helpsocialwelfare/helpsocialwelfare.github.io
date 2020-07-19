@@ -1,4 +1,4 @@
-var activity = [
+var activities = [
 {
   date: "20-07-2020",
   title: "face shield distribution",

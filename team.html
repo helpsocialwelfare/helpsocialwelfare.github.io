@@ -55,7 +55,12 @@
 
     <div class="container">
       <h5>Team</h5>
-      
+      <h6>Committee members</h6>
+      <div class="row row-cols-1 row-cols-md-3" id="committeeMembersEl">
+      </div>
+      <h6>Other members</h6>
+      <div class="row row-cols-1 row-cols-md-3" id="otherMembersEl">
+      </div>
     </div>
 
   </main>
@@ -75,7 +80,29 @@
   <script type="text/javascript">
     $(function() {
       console.log(team);
+      
+      var committeeMembers = team.committee.members;
+      var membersHtml = [];
+      committeeMembers.forEach(function(member){
+        membersHtml.push(getCard(member));
+      });
+      $("#committeeMembersEl").html(membersHtml.join(""));
+      
     });
+    function getCard(member){
+      var card = `<div class="col mb-4">
+                      <div class="card h-100">
+                        <img src="${member.picture}" class="card-img-top" alt="${member.name}">
+                        <div class="card-body">
+                          <h5 class="card-title">${member.name}</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">${member.description}</h6>
+                          <p class="card-text"></p>
+                        </div>
+                      </div>
+                    </div>
+                   `;
+      return card;
+    }
 </script>
 
 </body>

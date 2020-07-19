@@ -129,6 +129,6 @@ body {
   }
 }
 .card-img-top {
-  width: 50% important;
-  height: 50% important;
+  width: 50% !important;
+  height: 50% !important;
 }

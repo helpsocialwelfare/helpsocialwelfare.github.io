@@ -5,20 +5,23 @@ var team = {
     "members": [
       {
         "name": "Guntur Venkata Maruti Prabhakar",
-        "description": "Founder and President",
-        "picture":"../images/team/gvmprabhakar.jpg",
+        "title": "Founder and President",
+        "description": "",
+        "picture":"./data/images/team/gvmprabhakar.jpg",
         "profile_url": "https://www.facebook.com/maruti.prabhakar"
       },
       {
         "name": "Adigopula Bhanu Koti Prakash",
-        "description": "Vice President",
-        "picture":"../images/team/abprakash.jpg",
+        "title": "Vice President",
+        "description": "",
+        "picture":"./data/images/team/abprakash.jpg",
         "profile_url": "https://www.facebook.com/prakashabk"
       },
       {
         "name": "Gade Srikanth",
-        "description": "General Secretary",
-        "picture":"../images/team/gsrikanth.jpg",
+        "title": "General Secretary",
+        "description": "",
+        "picture":"./data/images/team/gsrikanth.jpg",
         "profile_url": "https://www.facebook.com/gsrikanth"
       }
     ]
@@ -30,7 +33,7 @@ var team = {
       {
         "name": "Guntur Venkata Maruti Prabhakar",
         "description": "Founder and President",
-        "picture":"../images/team/gvmprabhakar.jpg",
+        "picture":"./data/images/team/gvmprabhakar.jpg",
         "profile_url": "https://www.facebook.com/maruti.prabhakar"
       }
     ]

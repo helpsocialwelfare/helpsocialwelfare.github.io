@@ -2,7 +2,7 @@ var activity = [
 {
   "date": "20-07-2020",
   "title": "face shield distribution",
-  "content": "we have distributed face shields to health care workers and RTC employees.",
+  "content": "we have distributed face shields to health care workers and petrol bunk employees.",
   "location": "Repalle, Guntur"
 },
 {

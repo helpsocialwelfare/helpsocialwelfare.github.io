@@ -60,6 +60,8 @@
         submitted=true;
         setTimeout( function() {
           document.getElementById("contactForm").reset();
+          $('#contactForm *').fadeOut(2000);
+          $('#contactForm').prepend('Thank you...');
         }, 500);
         document.getElementById("contactForm").submit();
       }
@@ -119,9 +121,9 @@
     crossorigin="anonymous"></script>
   <script type="text/javascript">
     $(function() {
-      $('#gform').on('submit', function(e) {
-        $('#gform *').fadeOut(2000);
-        $('#gform').prepend('Your submission has been processed...');
+      $('#contactForm').on('submit', function(e) {
+        $('#contactForm *').fadeOut(2000);
+        $('#contactForm').prepend('Your submission has been processed...');
       });
     });
 </script>

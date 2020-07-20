@@ -56,8 +56,9 @@
   <main role="main">
     <script type="text/javascript">
       var submitted=false;
-      function onSubmit() {
+      function submitForm() {
         submitted=true;
+        document.getElementById("contactForm").submit();
         setTimeout( function() {
           document.getElementById("contactForm").reset();
         }, 500);
@@ -65,28 +66,29 @@
     </script>
 
     <div class="container">
-      <h5>Contact us</h5>
-      <h6>Address</h6>
+      <h3>Contact us</h3>
+      <h4>Address</h4>
       <address>
         <strong>HELP SOCIAL WELFARE ASSOCIATION (Regd No: 716 of 2017)</strong><br>
         H.No: 32-78/2/F-304, Plot No:39 & 40 A, <br>
         Sri Balaji Enclave,3rd Avenue, Sainik Nagar, Ramakrishnapuram,<br>
         Malkajgiri - 500056, Hyderabad, Telangana, India.<br>
-        <abbr title="Phone">P:</abbr>94410 33270
+        <abbr title="Phone">P:</abbr>94410 33270 <br>
         <strong>Email</strong><br>
         <a href="mailto:2017helpfoundation@gmail.com">2017helpfoundation@gmail.com</a>
       </address>
-      <h6>Donate</h6>
+      <h4>Donate</h4>
       <p>A bank account is opened solely for society to make the fund transfer effective. We request you to transfer the funds, directly to the mentioned account.</p>
       <address>
         <strong>A/C No: 50200026494094</strong><br>
-        <strong>RTGS/NEFT IFSC: HDFC0001555 MICR: 500240026</strong><br>
+        Bank: HDFC <br>
+        RTGS/NEFT IFSC: HDFC0001555 MICR: 500240026<br>
         A/C Type: Current account, <br>
         Account Branch : KARKHANA ROAD - VIKRAMPURI,<br>
         SECUNDERABAD 500009 <br/>
       </address>
-      <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLSfXx-Ti4nQJcpcq08xl9LJCa34yFutRGsIWTuz4fYEWPRp75g/formResponse?" target="hidden_iframe" onsubmit="onSubmit">
-        <h6>Comments</h6>
+      <h4>Feedback</h4>
+      <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLSfXx-Ti4nQJcpcq08xl9LJCa34yFutRGsIWTuz4fYEWPRp75g/formResponse?" target="hidden_iframe">
         <div class="form-group">
           <label for="entry.1350107316">Name</label>
           <input type="text" class="form-control" name="entry.1350107316" id="entry.1350107316" aria-describedby="name" required>
@@ -96,10 +98,10 @@
           <input type="text" class="form-control" name="entry.649781401" id="entry.649781401" aria-describedby="city" required>
         </div>
         <div class="form-group">
-          <label for="entry.1955967500">Feedback or Comments</label>
+          <label for="entry.1955967500">Comments</label>
           <textarea class="form-control" id="entry.1955967500" name="entry.1955967500" rows="3" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button onclick="submitForm" class="btn btn-primary">Submit</button>
       </form>
     </div>
 

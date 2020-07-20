@@ -58,12 +58,10 @@
       var submitted=false;
       function submitForm() {
         submitted=true;
-        setTimeout( function() {
-          document.getElementById("contactForm").reset();
-          $('#contactForm *').fadeOut(2000);
-          $('#contactForm').prepend('Thank you...');
-        }, 500);
         document.getElementById("contactForm").submit();
+        $('#contactForm *').fadeOut(2000);
+        $('#contactForm').prepend('Thank you...');
+        document.getElementById("contactForm").reset();
       }
     </script>
 
@@ -83,8 +81,8 @@
       <address>
         <strong>A/C No: 50200026494094</strong><br>
         Bank: HDFC <br>
-        RTGS/NEFT IFSC: HDFC0001555 MICR: 500240026<br>
-        A/C Type: Current account, <br>
+        A/C Type: Current, <br>
+        IFSC: HDFC0001555 MICR: 500240026<br>
         Account Branch : KARKHANA ROAD - VIKRAMPURI,<br>
         SECUNDERABAD 500009 <br/>
       </address>

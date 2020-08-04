@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 #header.header-scrolled {
@@ -622,11 +622,11 @@ section {
 # Featured Services
 --------------------------------------------------------------*/
 .featured-services {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .featured-services .icon-box {
-  padding: 20px;
+  padding: 15px;
 }
 
 .featured-services .icon-box-bg {
@@ -634,7 +634,8 @@ section {
 }
 
 .featured-services .icon {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  float: left;
 }
 
 .featured-services .icon i {
@@ -644,8 +645,9 @@ section {
 
 .featured-services .title {
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-top: 10px;
   font-size: 18px;
+  float: left;
 }
 
 .featured-services .title a {
@@ -660,6 +662,7 @@ section {
 .featured-services .description {
   line-height: 24px;
   font-size: 14px;
+  clear: both;
 }
 
 /*--------------------------------------------------------------

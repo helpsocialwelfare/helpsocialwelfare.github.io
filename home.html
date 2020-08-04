@@ -641,7 +641,7 @@
     }
     function getSlide(slide, i) {
       return `
-          <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-${i}.jpg)">
+          <div class="carousel-item ${i==0 ? 'active' : ''}" style="background-image: url(assets/img/slide/slide-${i+1}.jpg)">
             <div class="carousel-container">
               <div class="container">
                 <h2 class="animate__animated animate__fadeInDown">${slide.title}</h2>

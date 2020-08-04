@@ -22,28 +22,27 @@ var home = {
     {
         title: `Health`
       , description: `Health is the primary thing after which everything else follows. 
-                      Be it sudden or chronic, we have seen where a family lands when a family member requires medical help. 
+                      Be it sudden or chronic, we have seen where a family lands when a family member requires medical help. \n
                       We, the HELPers, contribute the deceased in such tough times by verifying authenticity.`
-      , image: ``
+      , icon: `medical-sign`
     },
     {
       title: `Education`
       , description: `Life is a real-time game but surely, Education is the torch to concur the dark. 
                       We, the HELPers, are on a mission to assist the needy students monetarily to continue their studies.`
-      , image: ``
+      , icon: `learn`
     },
     {
       title: `Lifestyle`
       , description: `The broader sense of lifestyle is a "way or style of living" but even today, we see many people in our society that face challenges for basic needs. 
                       We, the HELPers, try reaching out to them and assist in fulfilling at least some of their needs.`
-      , image: ``
+      , icon: `unique-idea`
     },
     {
       title: `Pathfinder`
-      , description: `As a student, we all have aspirations on what we wanted to become but were not clear on the 'how' part. 
-                      Many have the virtue of educated parents and/or relatives but we wish to be the source & direction for the rest. 
-                      We, the HELPers, visit rural schools, conduct career orientation programs at the schools for Classes IX & X, explain our personal experiences and distribute hand books that have all possible paths after class-X, XII etc. for ITI, to Teacher, Doctor, Engineer and many more.`
-      , image: ``
+      , description: `As a student, we all have aspirations on what we wanted to become but were not clear on the 'how' part. \n
+                      We, the HELPers, visit rural schools, conduct career orientation programs at the schools, explain our personal experiences and distribute career guidance books.`
+      , icon: `bulls-eye`
     }
   ],
   about: {

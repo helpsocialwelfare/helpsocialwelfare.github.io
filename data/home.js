@@ -42,7 +42,7 @@ var home = {
       title: `Pathfinder`
       , description: `As a student, we all have aspirations on what we wanted to become but were not clear on the 'how' part. \n
                       We, the HELPers, visit rural schools, conduct career orientation programs at the schools, explain our personal experiences and distribute career guidance books.`
-      , icon: `bulls-eye`
+      , icon: `bullseye`
     }
   ],
   about: {

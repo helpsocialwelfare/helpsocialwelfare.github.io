@@ -454,7 +454,7 @@
       });
 
       $("#cardsEl").html(getItemsHtml(home.cards, getCard));
-      $("#teamMembersEl").html(getItemsHtml(home.about.team, getTeamMember));
+      $("#teamMembersEl").html(getItemsHtml(team.members, getTeamMember));
     });
     function getItemsHtml(items, getItem){
       var itemsHtml = [];
@@ -490,18 +490,11 @@
       return `
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
-              <img src="assets/img/team/team-1.jpg" alt="">
-              <h4>${member.name}</h4>
-              <span>${member.title ? member.title : ''}</span>
-              <p>
-                ${member.description}
-              </p>
-              <div class="social">
-                <a href=""><i class="icofont-twitter"></i></a>
-                <a href=""><i class="icofont-facebook"></i></a>
-                <a href=""><i class="icofont-instagram"></i></a>
-                <a href=""><i class="icofont-linkedin"></i></a>
-              </div>
+              <img src="${member.picture}" alt="">
+              <h4>${member.name} <sub>${member.education}</sub></h4>
+              <span>${member.designation ? member.designation : ''}</span>
+              <span> ${member.company} </span>
+              <span> ${member.city} </span>
             </div>
           </div>
       `;

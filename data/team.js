@@ -20,7 +20,7 @@ var team = {
         "description": "",
         "designation":"Software Engineer",
         "education": "MCA",
-        "picture":"./data/images/team/abprakash.jpg",
+        "picture":"./data/images/team/abkprakash.jpg",
         "profile_url": "https://www.facebook.com/prakashabk",
         "title": "Vice President"
       },
@@ -87,6 +87,17 @@ var team = {
         "designation":"Software Engineer",
         "education": "MCA",
         "picture":"./data/images/team/kgopinadh.jpg",
+        "profile_url": "https://www.facebook.com/",
+        "title": ""
+      },
+      {
+        "name": "Ravikiran Rayaprolu",
+        "city": "Hyderabad",
+        "company": "Intense Technologies Limited",
+        "description": "",
+        "designation":"Software Engineer",
+        "education": "MSc(Computers)",
+        "picture":"./data/images/team/rravikiran.jpg",
         "profile_url": "https://www.facebook.com/",
         "title": ""
       },

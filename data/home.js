@@ -36,7 +36,7 @@ var home = {
       title: `Lifestyle`
       , description: `The broader sense of lifestyle is a "way or style of living" but even today, we see many people in our society that face challenges for basic needs. 
                       We, the HELPers, try reaching out to them and assist in fulfilling at least some of their needs.`
-      , icon: `unique-idea`
+      , icon: `users-social`
     },
     {
       title: `Pathfinder`

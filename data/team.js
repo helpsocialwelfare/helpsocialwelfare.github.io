@@ -36,7 +36,7 @@ var team = {
         "title": "General Secretary"
       },
       {
-        "name": "CHANDRA SEKAR GOURISETTY",
+        "name": "Chandra Sekar Gourisetty",
         "city": "London",
         "company": "ATOS SYNTEL",
         "description": "",
@@ -80,7 +80,7 @@ var team = {
         "title": ""
       },
       {
-        "name": "GOPINADH KANDULA",
+        "name": "Gopinadh Kandula",
         "city": "Hyderabad",
         "company": "Intense Technologies Limited",
         "description": "",

@@ -111,6 +111,12 @@
 
     $(function() {     
       $("#portfolio-details").html(getDetails());
+      $(".portfolio-details-carousel").owlCarousel({
+        autoplay: true,
+        dots: true,
+        loop: true,
+        items: 1
+      });
     });
     
     function getImagesHtml(date, totalImages) {

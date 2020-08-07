@@ -36,22 +36,6 @@
 
 <body>
 
-  <!-- ======= Top Bar ======= -->
-<!--   <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
-    <div class="container d-flex">
-      <div class="contact-info mr-auto">
-        <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
-        <i class="icofont-phone"></i> +1 5589 55488 55
-      </div>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="#" class="skype"><i class="icofont-skype"></i></a>
-        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
-      </div>
-    </div>
-  </div> -->
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
@@ -65,15 +49,15 @@
       </h1>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#portfolio">Activity</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li class="active"><a href="#">Activity</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="#donate" class="get-started-btn scrollto">Donate</a>
+      <a href="index.html#donate" class="get-started-btn scrollto">Donate</a>
 
     </div>
   </header><!-- End Header -->
@@ -85,11 +69,11 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfolio Details</h2>
-          <ol>
+          <h2>Activity Details</h2>
+<!--           <ol>
             <li><a href="index.html">Home</a></li>
             <li>Portfolio Details</li>
-          </ol>
+          </ol> -->
         </div>
 
       </div>
@@ -97,36 +81,6 @@
 
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="portfolio-details-container">
-
-          <div class="owl-carousel portfolio-details-carousel">
-            <img src="assets/img/portfolio/portfolio-details-1.jpg" class="img-fluid" alt="">
-            <img src="assets/img/portfolio/portfolio-details-2.jpg" class="img-fluid" alt="">
-            <img src="assets/img/portfolio/portfolio-details-3.jpg" class="img-fluid" alt="">
-          </div>
-
-          <div class="portfolio-info">
-            <h3>Project information</h3>
-            <ul>
-              <li><strong>Category</strong>: Web design</li>
-              <li><strong>Client</strong>: ASU Company</li>
-              <li><strong>Project date</strong>: 01 March, 2020</li>
-              <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div class="portfolio-description">
-          <h2>This is an example of portfolio detail</h2>
-          <p>
-            Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-          </p>
-        </div>
-
-      </div>
     </section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
@@ -134,29 +88,14 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-<!--       <h3>Green</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div> -->
       <div class="copyright">
         &copy; Copyright <strong><span>HELP Social Welfare Association</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/green-free-one-page-bootstrap-template/ -->
         Theme by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
   </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -171,43 +110,54 @@
   <script type="text/javascript">
 
     $(function() {     
-      $("#slidesEl").html(getItemsHtml(home.slides, getSlide));
-      // Intro carousel
-      var heroCarousel = $("#heroCarousel");
-      var heroCarouselIndicators = $("#hero-carousel-indicators");
-      heroCarousel.find(".carousel-inner").children(".carousel-item").each(function(index) {
-        (index === 0) ?
-        heroCarouselIndicators.append("<li data-target='#heroCarousel' data-slide-to='" + index + "' class='active'></li>"):
-          heroCarouselIndicators.append("<li data-target='#heroCarousel' data-slide-to='" + index + "'></li>");
-      });
-
-      heroCarousel.on('slid.bs.carousel', function(e) {
-        $(this).find('h2').addClass('animate__animated animate__fadeInDown');
-        $(this).find('p, .btn-get-started').addClass('animate__animated animate__fadeInUp');
-      });
-
-      $("#cardsEl").html(getItemsHtml(home.cards, getCard));
-      $("#teamMembersEl").html(getItemsHtml(team.members, getTeamMember));
+      $("#portfolio-details").html(getDetails());
     });
-    function getItemsHtml(items, getItem){
-      var itemsHtml = [];
-      items.forEach(function(item,i){
-        itemsHtml.push(getItem(item, i));
-      });
-      return itemsHtml.join("");
+    
+    function getImagesHtml(date, totalImages) {
+      if (!date) {
+        return ``;
+      }
+      let d1 = date.split("-").map(function(d){return parseInt(d);});
+      let images = [];
+      for (var i=0; i<totalImages; i++) {
+        images.push(`<img src="./data/images/activity/${d1[2]}/${d1[1]}/${d1[0]}/${i+1}.jpg" class="img-fluid" alt="">`);
+      }
+      return images.join('');
+    
     }
-    function getSlide(slide, i) {
-      return `
-          <div class="carousel-item ${i==0 ? 'active' : ''}" style="background-image: url(${slide.image})">
-            <div class="carousel-container">
-              <div class="container">
-                <h2 class="animate__animated animate__fadeInDown">${slide.title}</h2>
-                <p class="animate__animated animate__fadeInUp">${slide.description}</p>
-                <a href="${i==0 ? '#about': ''}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-              </div>
+    
+    function getDetails() {
+      let search = window.location.search || "";
+      let date = search.split("=")[1];
+      let activity = activities.filter(function(item){return item.date == date})[0];
+      if (!activity) return;
+      let imagesHtml = getImagesHtml(date, activity.totalImages);
+      let details = `
+        <div class="container">
+          <div class="portfolio-details-container">
+            <div class="owl-carousel portfolio-details-carousel">
+              ${imagesHtml}
+            </div>
+
+            <div class="portfolio-info">
+              <h3>${activity.title}</h3>
+              <ul>
+                <li><strong>Date</strong>: ${activity.date}</li>
+                <li><strong>Location</strong>: ${activity.location}</li>
+              </ul>
             </div>
           </div>
-          `;
+          <div class="portfolio-description">
+            <h2>${activity.title}</h2>
+            <p>
+              ${activity.description}
+            </p>
+            <p>
+              ${activity.details}
+            </p>
+          </div>
+        </div>
+      `;
     }
   </script>
   <!-- Template Main JS File -->

@@ -5,17 +5,19 @@ var home = {
       , description: `Dr. Abdul Kalam said "YOU were born with WINGS, Don't crawl, learn to use them fly and fly"! 
                       The question is.. "How many realize they CAN stretch wings?" At some point of time in life, many of us alter the destination due to a missing help!
                       Be it Health, Education, Lifestyle or Path finder (Career Guidance), WE, the HELPers, believe in fulfilling this gap & enable people to resume their journeys!`
-      , image: ``
+      , image: `./data/images/slides/slide1.jpg`
     },
     {
-      title: `face shield distribution`,
-      description: `we have distributed face shields to health care workers and petrol bunk employees.`,
-      image: ``
+      title: `Face shields distribution`,
+      description: `Distributed face shields to health care workers at Govt. Hospitals.`,
+      image: `./data/images/slides/slide2.jpg`,
+      date: `20-07-2020`,
     },
     {
-      title: `kids home visit`,
-      description: `we have distributed meals to kids in hostel on the occasion of republic day`,
-      image: ``
+      title: `Food Donation at "GLOBAL HOPE INDIA"`,
+      description: `Served food to 70 children at the orphanage home on Republic Day(26-Jan-2020).`,
+      image: `./data/images/slides/slide3.jpg`,
+      date: `26-01-2020`
     }
   ],
   cards: [
@@ -44,34 +46,5 @@ var home = {
                       We, the HELPers, visit rural schools, conduct career orientation programs at the schools, explain our personal experiences and distribute career guidance books.`
       , icon: `bullseye`
     }
-  ],
-  about: {
-    description: `Founded on 26th January 2016 by a group of friends headed by Shri. G.V.M.Prabhakar, our HELP touched many lives in each of these categories. 
-                  Our continuous HELP to society brought nothing but just smiles on numerous faces! Our gallery reflects this very well. Please do visit it.
-                  Formally.. 
-                  "YOU are WELCOME to HELP!"`
-    , team:  [
-      {
-        name: `Guntur Venkata Maruti Prabhakar`,
-        title: `Founder and President`,
-        description: ``,
-        image: `./data/images/team/gvmprabhakar.jpg`,
-        profile_url: `https://www.facebook.com/maruti.prabhakar`,
-      },
-      {
-        name: `Adigopula Bhanu Koti Prakash`,
-        title: `Vice President`,
-        description: ``,
-        image: `./data/images/team/abprakash.jpg`,
-        profile_url: `https://www.facebook.com/prakashabk`,
-      },
-      {
-        name: `Gade Srikanth`,
-        title: `General Secretary`,
-        description: ``,
-        image: `./data/images/team/gsrikanth.jpg`,
-        profile_url: `https://www.facebook.com/gsrikanth`,
-      }
-    ]
-  }
+  ]
 }

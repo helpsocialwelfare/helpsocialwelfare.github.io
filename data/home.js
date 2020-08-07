@@ -14,7 +14,7 @@ var home = {
       date: `20-07-2020`,
     },
     {
-      title: `Food Donation at "GLOBAL HOPE INDIA"`,
+      title: `Food Donation at GLOBAL HOPE INDIA`,
       description: `Served food to 70 children at the orphanage home on Republic Day(26-Jan-2020).`,
       image: `./data/images/slides/slide3.jpg`,
       date: `26-01-2020`

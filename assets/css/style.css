@@ -481,6 +481,9 @@ h1, h2, h3, h4, h5, h6 {
   #hero .carousel-control-prev, #hero .carousel-control-next {
     top: 66px;
   }
+  #hero .carousel-inner .carousel-item {
+  background-position: center;
+}
 }
 
 #hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {

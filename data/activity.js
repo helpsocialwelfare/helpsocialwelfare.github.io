@@ -1,17 +1,23 @@
 var activities = [
-{
-  date: "20-07-2020",
-  title: "face shield distribution",
-  content: "we have distributed face shields to health care workers and petrol bunk employees.",
-  location: "Repalle, Guntur",
-  totalImages: 3
-},
-{
-  date: "25-12-2019",
-  title: "kids home visit",
-  content: "we have distributed meals to kids in hostel on the occasion of republic day",
-  location: "LB Nagar, Hyderabad",
-  totalImages: 3
-}
-
+  {
+    date: "20-07-2020",
+    title: "Face shield distribution",
+    description: "Distributed face shields to health care workers of Govt. hospitals",
+    location: "Repalle, Guntur",
+    totalImages: 6
+  },
+  {
+    date: "26-01-2020",
+    title: "Food donation at 'GLOBAL HOPE INDIA' ",
+    description: "Served meals to kids at GLOBAL HOPE INDIA orphanage home on the occasion of republic day",
+    location: "LB Nagar, Hyderabad",
+    totalImages: 6
+  },
+  {
+    date: "25-12-2019",
+    title: "Food donation at Helen Keller's Institute",
+    description: "Served meals to kids at Keller's Institute of research & rehabilitation for disabled children on the occasion of republic day",
+    location: "Neredmet, Hyderabad",
+    totalImages: 6
+  }
 ];

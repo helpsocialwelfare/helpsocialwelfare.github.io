@@ -341,7 +341,7 @@
               <div class="container">
                 <h2 class="animate__animated animate__fadeInDown">${slide.title}</h2>
                 <p class="animate__animated animate__fadeInUp">${slide.description}</p>
-                <a href="${i==0 ? '#about': 'activity.html?date=${slide.date}'}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                <a href="${i==0 ? '#about': 'activity.html?date='+slide.date}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
               </div>
             </div>
           </div>
@@ -359,7 +359,7 @@
     }
     function getTeamMember(member){
       return `
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <img src="${member.picture}" alt="">
               <h4>${member.name} <sub>${member.education}</sub></h4>

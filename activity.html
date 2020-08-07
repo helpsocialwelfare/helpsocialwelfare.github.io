@@ -132,7 +132,7 @@
       let activity = activities.filter(function(item){return item.date == date})[0];
       if (!activity) return;
       let imagesHtml = getImagesHtml(date, activity.totalImages);
-      let details = `
+      return `
         <div class="container">
           <div class="portfolio-details-container">
             <div class="owl-carousel portfolio-details-carousel">

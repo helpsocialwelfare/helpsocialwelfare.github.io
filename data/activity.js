@@ -3,7 +3,7 @@ var activities = [
     date: "20-07-2020",
     title: "Face shield distribution",
     description: "Distributed face shields to health care workers of Govt. hospitals",
-    location: "Repalle, Guntur",
+    location: "Repalle, Avanigadda",
     totalImages: 6
   },
   {

@@ -1105,7 +1105,7 @@ section {
   padding: 15px 0;
   background: #fbfbfb;
   min-height: 40px;
-  margin-top: 122px;
+  margin-top: 70px;
 }
 
 @media (max-width: 992px) {
@@ -1155,7 +1155,7 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 40px;
+  padding-top: 25px;
 }
 
 .portfolio-details .portfolio-details-container {
@@ -1196,6 +1196,7 @@ section {
 }
 
 .portfolio-details .portfolio-info h3 {
+  display:none;
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;

@@ -61,7 +61,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="index.html#about">About Us</a></li>
-          <li class="active"><a href="#">Activity</a></li>
+          <li class="active"><a href="index.html#activity">Activity</a></li>
           <li><a href="index.html#contact">Contact</a></li>
 
         </ul>
@@ -170,7 +170,7 @@
               ${activity.description}
             </p>
             <p>
-              ${activity.details}
+              ${activity.details ? activity.details : ''}
             </p>
           </div>
         </div>

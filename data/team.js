@@ -47,12 +47,12 @@ var team = {
         "title": ""
       },
       {
-        "name": "K.V.S Sastry",
+        "name": "Subbaiah",
         "city": "Hyderabad",
-        "company": "DRDO",
+        "company": "",
         "description": "",
-        "designation":"Scientist-E",
-        "education": "M.Tech,IIT Kharagpur",
+        "designation":"Engineer",
+        "education": "M.Tech",
         "picture":"./data/images/team/kvssastry.jpg",
         "profile_url": "https://www.facebook.com/",
         "title": ""

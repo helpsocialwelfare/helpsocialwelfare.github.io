@@ -16,7 +16,7 @@ var activities = [
   {
     date: "25-12-2019",
     title: "Food donation at Helen Keller's Institute",
-    description: "Served meals to kids at Keller's Institute of research & rehabilitation for disabled children on the occasion of christmas.",
+    description: "Served meals to kids at Helen Keller's Institute of research & rehabilitation for disabled children on the occasion of christmas.",
     location: "Neredmet, Hyderabad",
     totalImages: 10
   },
